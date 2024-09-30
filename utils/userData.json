@@ -1,0 +1,32 @@
+[
+    {
+        "username": "user1",
+        "email": "user1@mail.com",
+        "thoughts": [],
+        "friends": [] 
+    },
+    {
+        "username": "user2",
+        "email": "user2@mail.com",
+        "thoughts": [],
+        "friends": []  
+    },
+    {
+        "username": "user3",
+        "email": "user3@mail.com",
+        "thoughts": [],
+        "friends": [] 
+    },
+    {
+        "username": "user4",
+        "email": "user4@mail.com",
+        "thoughts": [],
+        "friends": []  
+    },
+    {
+        "username": "user5",
+        "email": "user5@mail.com",
+        "thoughts": [],
+        "friends": []  
+    }
+]
