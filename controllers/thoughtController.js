@@ -40,7 +40,7 @@ module.exports = {
             }
             res.json(newThought);
         } catch (err) {
-            res.status(500),json(err);
+            res.status(500).json(err);
         }
     },
 
@@ -52,9 +52,10 @@ module.exports = {
         return res.status(404).json({ message: "No thought with that ID!" });
       }
       // Remove the thought reference from the user model
-      await User.updateMany(
+      await User.findOneAndUpdate(
         { thoughts: req.params.thoughtId },
-        { $pull: { thoughts: req.params.thoughtId } }
+        { $pull: { thoughts: req.params.thoughtId } },
+        { new: true }
       );
       res.json({ message: "Thought deleted!" });
     } catch (err) {
